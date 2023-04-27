@@ -14,7 +14,7 @@ outputs = get_history()
 i = 0
 result_in_list = []
 checking_for_none = ""
-result_in_json = outputs.to_json()
+result_in_json = str(outputs.to_json())
 keyword_filter = "+"
 
 
