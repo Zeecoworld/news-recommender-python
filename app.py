@@ -47,4 +47,7 @@ async def read_item(request: Request):
                 author = key["title"].split('-')[1]
                 news_re = {"heading":key["title"],"url":key["url"],"author":author}
                 news_result.append(news_re)
-    return templates.TemplateResponse("index.html", {"request":request,"news_result":news_result})
+    return {
+        "title": title,
+        "author": author,
+    }
