@@ -48,6 +48,5 @@ async def read_item(request: Request):
                 news_re = {"heading":key["title"],"url":key["url"],"author":author}
                 news_result.append(news_re)
     return {
-        "title": title,
-        "author": author,
+        "news_result": news_result
     }
