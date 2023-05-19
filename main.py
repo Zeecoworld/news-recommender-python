@@ -19,7 +19,7 @@ keyword_filter = "+"
 
 
 
-app = FastAPI()
+app = FastAPI(title="NEWS RECOMMENDER APP")
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
